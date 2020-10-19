@@ -4,6 +4,7 @@ import { WidthProvider, Responsive } from "react-grid-layout";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import PDFDisplay from "./PDFDisplay.js";
+import ResizeTest from "./ResizeTest.js";
 // import MyPdfViewer from "./MyPdfViewer.js";
 // import MyPdfViewer2 from "./MyPdfViewer2.js";
 
@@ -67,7 +68,7 @@ export default class ResponsiveLocalStorageLayout extends React.PureComponent {
             key="1"
             id="pdfPanel"
             style={{ border: "solid 1px black", backgroundColor: "lawngreen" }}
-            data-grid={{ w: 2, h: 3, x: 0, y: 0, minW: 2, minH: 3 }}
+            data-grid={{ w: 2, h: 1, x: 0, y: 0, minW: 2, minH: 3 }}
           >
             <PDFDisplay pdfPanelHeight={this.state.pdfPanelHeight}/>
             {/* <span className="text">1</span> */}
@@ -77,6 +78,7 @@ export default class ResponsiveLocalStorageLayout extends React.PureComponent {
             style={{ border: "solid 1px black", backgroundColor: "white" }}
             data-grid={{ w: 2, h: 3, x: 2, y: 0, minW: 2, minH: 3 }}
           >
+            {/* <ResizeTest /> */}
             <span className="text">2</span>
           </div>
           <div
